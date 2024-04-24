@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "TutorialMod",
+	"description": "This is tutorial mod made by cyborin ON 8:30 PM 4/23",
+	"authors": [
+		"cyborin"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cyborin.tutorialmod.TutorialMod"
+		],
+		"client": [
+			"net.cyborin.tutorialmod.TutorialModClient"
+		],
+		"fabric-datagen": [
+			"net.cyborin.tutorialmod.TutorialModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
